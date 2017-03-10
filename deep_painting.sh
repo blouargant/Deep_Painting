@@ -5,9 +5,9 @@ STYLE_NAME=$(echo "$2" | sed -e "s/\.jpg//")
 NAME=$(echo "$1" | sed -e "s/\.jpg//" | sed -e "s/.*\///")
 OUTPUT_NAME=$NAME-$STYLE_NAME
 
-ITERATIONS=100000
+ITERATIONS=1000
 LAST_OUT=$OUTPUT_NAME-final
-STEP=10000
+STEP=0
 
 function paint {
 	if [ "$STEP" == 0 ]; then
